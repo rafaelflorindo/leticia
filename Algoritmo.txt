@@ -1,0 +1,48 @@
+Algoritmo Exemplo2
+	procedimento SomarVetor() 
+	var
+		vetA: vetor[1..5] de inteiro
+		somaVetor: inteiro
+		cont: inteiro
+	inicio
+		somaVetor<-0
+		para cont de 1 até 5 passo 1 faca
+			escreva("Informe o valor: ", cont)
+			leia(vetA[cont])
+			somaVetor<-somaVetor + vetA[cont]	
+		fim_para
+		escreva("A soma do Vetor é: ", somaVetor)
+	fim_procedimento
+inicio
+	somarVetor()	
+fim
+
+
+
+Algoritmo MaiorElemento
+	procedimento maior Elemento(vetorA: vetor[1..5] de inteiro)
+	var
+		cont, maior, menor: inteiro
+	inicio
+		maior <- vetorA[0]
+		menor <- vetorA[0]
+		para cont de 1 ate 5 passo 1 faca
+			se(vetorA[cont] > maior) entao
+				maior <- vetor[cont]		
+			senao
+				se(vetorA[cont] < menor) entao
+					menor <- vetor[cont]	
+				fim_se
+			fim_se
+		fim_para
+	fim_procedimento
+Var
+	vetA: vetor[1..5] de inteiro
+	cont: inteiro
+inicio
+	para cont de 1 até 5 passo 1 faca
+		escreva("Informe o valor: ", cont)
+		leia(vetA[cont])
+	fim_para
+	maiorElemento(vetA)
+fim
